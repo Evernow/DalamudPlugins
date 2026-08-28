@@ -15,7 +15,7 @@ $ErrorActionPreference = "Stop"
 $headers = @{ "User-Agent" = "DalamudPlugins-sync" }
 if ($env:GITHUB_TOKEN) { $headers["Authorization"] = "Bearer $($env:GITHUB_TOKEN)" }
 
-$master = Get-Content $PluginMasterPath -Raw | ConvertFrom-Json
+$master = @(Get-Content $PluginMasterPath -Raw | ConvertFrom-Json)
 $changed = $false
 
 foreach ($entry in $master) {
