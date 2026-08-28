@@ -57,7 +57,7 @@ foreach ($entry in $master) {
 }
 
 if ($changed) {
-    $master | ConvertTo-Json -Depth 10 | Set-Content $PluginMasterPath -Encoding UTF8
+    $master | ConvertTo-Json -Depth 10 -AsArray | Set-Content $PluginMasterPath -Encoding UTF8
     Write-Host "pluginmaster.json updated"
 } else {
     Write-Host "no changes"
