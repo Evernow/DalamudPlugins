@@ -15,13 +15,13 @@
     "RepoUrl": "https://github.com/Evernow/Emptor",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
-    "AssemblyVersion": "0.2.7.0",
-    "TestingAssemblyVersion": "0.2.7.0",
+    "AssemblyVersion": "0.2.8.0",
+    "TestingAssemblyVersion": "0.2.8.0",
     "IsTestingExclusive": false,
     "DownloadCount": 0,
-    "LastUpdate": 1787969745,
-    "DownloadLinkInstall": "https://github.com/Evernow/Emptor/releases/download/v0.2.7.0/Emptor.zip",
-    "DownloadLinkUpdate": "https://github.com/Evernow/Emptor/releases/download/v0.2.7.0/Emptor.zip",
-    "DownloadLinkTesting": "https://github.com/Evernow/Emptor/releases/download/v0.2.7.0/Emptor.zip"
+    "LastUpdate": 1787970348,
+    "DownloadLinkInstall": "https://github.com/Evernow/Emptor/releases/download/v0.2.8.0/Emptor.zip",
+    "DownloadLinkUpdate": "https://github.com/Evernow/Emptor/releases/download/v0.2.8.0/Emptor.zip",
+    "DownloadLinkTesting": "https://github.com/Evernow/Emptor/releases/download/v0.2.8.0/Emptor.zip"
   }
 ]
