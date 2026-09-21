@@ -26,7 +26,12 @@ foreach ($entry in $master) {
     $slug = "$($Matches[1])/$($Matches[2])".TrimEnd('/')
     $name = $entry.InternalName
 
-    $release = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$slug/releases/latest"
+    # A plugin with no release yet must not take the whole sync down with it.
+    $release = $null
+    try { $release = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$slug/releases/latest" }
+    catch { Write-Warning "$name: $slug has no latest release, skipping" }
+    if (-not $release) { continue }
+
     $manifestAsset = $release.assets | Where-Object { $_.name -eq "$name.json" } | Select-Object -First 1
     if (-not $manifestAsset) {
         Write-Warning "$name: latest release of $slug has no $name.json asset, skipping"
