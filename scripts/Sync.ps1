@@ -29,12 +29,12 @@ foreach ($entry in $master) {
     # A plugin with no release yet must not take the whole sync down with it.
     $release = $null
     try { $release = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$slug/releases/latest" }
-    catch { Write-Warning "$name: $slug has no latest release, skipping" }
+    catch { Write-Warning "${name}: $slug has no latest release, skipping" }
     if (-not $release) { continue }
 
     $manifestAsset = $release.assets | Where-Object { $_.name -eq "$name.json" } | Select-Object -First 1
     if (-not $manifestAsset) {
-        Write-Warning "$name: latest release of $slug has no $name.json asset, skipping"
+        Write-Warning "${name}: latest release of $slug has no $name.json asset, skipping"
         continue
     }
 
@@ -45,7 +45,7 @@ foreach ($entry in $master) {
     $dl       = "https://github.com/$slug/releases/download/$($release.tag_name)/$name.zip"
 
     if ($entry.AssemblyVersion -eq $version -and $entry.DownloadLinkInstall -eq $dl) {
-        Write-Host "$name: up to date ($version)"
+        Write-Host "${name}: up to date ($version)"
         continue
     }
 
@@ -58,7 +58,7 @@ foreach ($entry in $master) {
     $entry.DownloadLinkUpdate     = $dl
     $entry.DownloadLinkTesting    = $dl
     $changed = $true
-    Write-Host "$name: -> $version (api $api)"
+    Write-Host "${name}: -> $version (api $api)"
 }
 
 if ($changed) {
