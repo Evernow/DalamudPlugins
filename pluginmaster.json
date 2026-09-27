@@ -28,8 +28,8 @@
     "Name": "AnoMech Testing",
     "InternalName": "AnoMechTesting",
     "Author": "Anomek",
-    "Punchline": "Testing build of the AnoMech multiplayer branch.",
-    "Description": "Unstable build of the multiplayer work in progress on Evernow/AnoMech's multiplayer-support branch. Spawns fake party members and bosses client-side so you can practice raid mechanics, with several people sharing one simulation. Installs alongside the normal AnoMech and keeps its own settings.",
+    "Punchline": "Testing build of AnoMech's master branch.",
+    "Description": "Unstable build of the latest anomek/AnoMech master, updated shortly after every change. Spawns fake party members and bosses client-side so you can practice raid mechanics, alone or with several people sharing one simulation. Installs alongside the normal AnoMech and keeps its own settings.",
     "Tags": [
       "top",
       "umad",
