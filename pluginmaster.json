@@ -46,13 +46,13 @@
     "RepoUrl": "https://github.com/Evernow/Anomech-testing",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
-    "AssemblyVersion": "0.4.2.106",
-    "TestingAssemblyVersion": "0.4.2.106",
+    "AssemblyVersion": "0.4.2.108",
+    "TestingAssemblyVersion": "0.4.2.108",
     "IsTestingExclusive": false,
     "DownloadCount": 0,
-    "LastUpdate": 1791768204,
-    "DownloadLinkInstall": "https://github.com/Evernow/Anomech-testing/releases/download/src-dfb0bf0/AnoMechTesting.zip",
-    "DownloadLinkUpdate": "https://github.com/Evernow/Anomech-testing/releases/download/src-dfb0bf0/AnoMechTesting.zip",
-    "DownloadLinkTesting": "https://github.com/Evernow/Anomech-testing/releases/download/src-dfb0bf0/AnoMechTesting.zip"
+    "LastUpdate": 1791824519,
+    "DownloadLinkInstall": "https://github.com/Evernow/Anomech-testing/releases/download/src-21dee90/AnoMechTesting.zip",
+    "DownloadLinkUpdate": "https://github.com/Evernow/Anomech-testing/releases/download/src-21dee90/AnoMechTesting.zip",
+    "DownloadLinkTesting": "https://github.com/Evernow/Anomech-testing/releases/download/src-21dee90/AnoMechTesting.zip"
   }
 ]
